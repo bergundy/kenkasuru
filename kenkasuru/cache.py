@@ -43,7 +43,6 @@ def file_cache(reader=Cache.default_reader, writer=Cache.default_writer):
         @wraps(fn)
         def wrapper(*args, **kwargs):
             path = make_key(fn, *args, **kwargs)
-            print(fn, args, kwargs, path)
             # noinspection PyBroadException
             try:
                 return Cache.get(path, reader=reader)
