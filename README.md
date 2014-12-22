@@ -9,20 +9,22 @@ It also automatically downloads new episodes for shows you follow in http://www.
 
 Currently uses uTorrent for downloads.
 
-# Installation
+## Installation
 ```
 git clone https://github.com/bergundy/kenkasuru.git
 cd kenkasuru
 virtualenv .pyenv # must be virtualenv for python 3
+source .pyenv/bin/activate
 pip install -r requirements.txt
 ```
 
-# Running
+## Running
+In an activated virtualenv, run:
 ```
 python cli.py --help
 ```
 
-# Configuration
+## Configuration
 Copy the sample config file into ~/.kenkasuru.json, fill in your details.
 calendar is required in order to run "update".
 ```
@@ -41,5 +43,5 @@ calendar is required in order to run "update".
 }
 ```
 
-# Setup uTorrent
+## Setup uTorrent
 http://lifehacker.com/260393/remote-control-your-torrents-with-utorrents-webui
